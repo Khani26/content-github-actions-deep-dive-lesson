@@ -1,8 +1,10 @@
 name: Deploy my Lambda Function
 
 # trigger on all push events to main branch
-on: workflow_dispatch
-
+on: 
+ push:
+  branches:
+   - main
 
 jobs:
   build:
